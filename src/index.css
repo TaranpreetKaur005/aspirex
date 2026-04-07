@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F4F5F7;
+    color: #172B4D;
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+@layer components {
+  .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: #EBECF0; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: #C1C7D0; border-radius: 4px; }
+  .custom-scrollbar { scrollbar-width: thin; scrollbar-color: #C1C7D0 #EBECF0; }
+}
